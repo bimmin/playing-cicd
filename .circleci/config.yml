@@ -40,6 +40,6 @@ workflows:
       - unit_tests:
           requires:
             - checkout_code
-      - build_image:
+      - build_images:
           requires:
             - unit_tests
