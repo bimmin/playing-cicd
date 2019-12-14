@@ -28,7 +28,7 @@ jobs:
       - attach_workspace:
           at: .
       - run: |
-          docker build -t bimmin/anotherfizz:latest
+          docker build -t bimmin/anotherfizz:latest .
           docker login -u bimmin -p $DOCKER_PASS
           docker push bimmin/anotherfizz:latest
 
